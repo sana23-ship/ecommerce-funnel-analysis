@@ -114,7 +114,8 @@ for col in ['view', 'cart', 'purchase']:
     if col not in category.columns:
         category[col] = 0
 
-category['conversion'] = (category['purchase'] / category['view']).round(4)
+category['conversion'] = (category['purchase'] / category['view']).clip(0, 1).round(4)
+category = category[category['view'] > 0]
 
 # Category revenue from actual purchase prices
 cat_revenue = df[df['event_type'] == 'purchase'].groupby('category_code')['price'].sum().round(2)
@@ -156,7 +157,7 @@ col1, col2 = st.columns(2)
 with col1:
     fig4 = px.line(hour_grp.reset_index(), x='hour', y='conversion',
                    title="Conversion Rate by Hour of Day", markers=True)
-    fig4.update_layout(xaxis=dict(tickmode='linear', dtick=1))
+    fig4.update_layout(xaxis=dict(tickmode='linear', dtick=1, range=[-0.5, 23.5]))
     st.plotly_chart(fig4, use_container_width=True)
 
 with col2:
