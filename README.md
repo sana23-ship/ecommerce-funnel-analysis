@@ -2,7 +2,7 @@
 
 An end-to-end data analysis project that identifies user drop-off points in an e-commerce purchase funnel and quantifies the business impact of improving conversion rates.
 
-**[▶ Live App](your-streamlit-url-here)** · **[📓 Analysis Notebook](analysis.ipynb)**
+**[▶ Live App](https://ecommerce-funnel-analysis-live.streamlit.app/)** · **[📓 Analysis Notebook](analysis.ipynb)**
 
 ---
 
