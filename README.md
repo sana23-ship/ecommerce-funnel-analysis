@@ -81,16 +81,9 @@ The interactive app allows anyone — analyst or stakeholder — to explore the 
 - **Hourly Conversion Chart** — Identify high-intent hours vs. browsing hours
 - **Business Impact Simulator** — Drag a slider to set a target conversion rate and see the estimated additional purchases in real time
 
-### Screenshots
-
-> *(Add screenshots here: funnel overview, category performance, business impact slider)*  
-> Suggested: `docs/screenshots/funnel_overview.png`, `docs/screenshots/category_chart.png`, `docs/screenshots/simulator.png`
-
----
-
 ## 📊 Power BI Dashboard
 
-The Power BI file (`funnel_analysis.pbix`) contains three pages:
+The Power BI file  contains three pages:
 
 1. **Funnel Overview** — Overall conversion metrics and funnel visualisation
 2. **Category Performance** — Conversion rates and revenue by product category
